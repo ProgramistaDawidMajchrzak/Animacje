@@ -1,0 +1,129 @@
+@keyframes BottleAppear {
+    0% {
+        height: 160px;
+    }
+
+
+    50% {
+        height: 100px;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    61% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes FlaresAppear {
+    0% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    56% {
+        opacity: 1;
+    }
+
+
+
+    100% {
+        opacity: 0;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animation-box {
+    width: 200px;
+    height: 200px;
+    background-color: #eeebdd;
+    margin: 100px;
+    border-radius: 50px;
+    position: relative;
+
+}
+
+.bottle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottleAppear {
+    animation-name: BottleAppear;
+    animation-duration: 1.25s;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+}
+
+.flaresAppear {
+    animation-name: FlaresAppear;
+    animation-duration: 1.25s;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+}
+
+.flares {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.flares-item {
+    background-color: #a3d2ca;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+}
+
+.top-left {
+    left: 30%;
+    top: 20%;
+    transform: rotate(-30deg);
+}
+
+.middle-left {
+    left: 20%;
+    top: 45%;
+    transform: rotate(90deg);
+}
+
+.bottom-left {
+    left: 30%;
+    top: 70%;
+    transform: rotate(30deg);
+}
+
+.top-right {
+    right: 30%;
+    top: 20%;
+    transform: rotate(-150deg);
+}
+
+.middle-right {
+    right: 20%;
+    top: 45%;
+    transform: rotate(90deg);
+}
+
+.bottom-right {
+    right: 30%;
+    top: 70%;
+    transform: rotate(150deg);
+}
