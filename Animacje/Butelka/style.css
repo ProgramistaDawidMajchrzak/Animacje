@@ -3,12 +3,8 @@
         height: 160px;
     }
 
-
-    50% {
-        height: 100px;
-    }
-
     60% {
+        height: 100px;
         opacity: 1;
     }
 
@@ -63,6 +59,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bottle img {
+    height: 160px;
 }
 
 .bottleAppear {

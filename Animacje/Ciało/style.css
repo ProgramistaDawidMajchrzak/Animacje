@@ -1,0 +1,110 @@
+@keyframes LeafAnimation {
+    from {
+        height: 0;
+    }
+
+    top {
+        height: 40px;
+    }
+}
+
+@keyframes StalkAnimation {
+    from {
+        height: 0;
+    }
+
+    top {
+        height: 40px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animation-box {
+    height: 200px;
+    width: 200px;
+    background-color: #f7f3e9;
+    margin: 100px;
+    border-radius: 50px;
+    background-image: url(images/body.png);
+    background-size: 200px;
+    background-position: top;
+    position: relative;
+}
+
+.animation-box img {
+    position: absolute;
+}
+
+.stalk {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 70px;
+}
+
+.left-top-leaf {
+    left: 44%;
+    top: 30%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    height: 40px;
+}
+
+.left-bottom-leaf {
+    left: 44%;
+    top: 45%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    height: 40px;
+}
+
+.right-top-leaf {
+    left: 57%;
+    top: 40%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 40px;
+}
+
+.right-bottom-leaf {
+    left: 57%;
+    top: 55%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 40px;
+}
+
+.right-bottom-leaf-animation {
+    animation-name: LeafAnimation;
+    animation-duration: 1s;
+    animation-delay: .25s;
+    animation-fill-mode: both;
+}
+
+.left-bottom-leaf-animation {
+    animation-name: LeafAnimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+}
+
+.right-top-leaf-animation {
+    animation-name: LeafAnimation;
+    animation-duration: 1s;
+    animation-delay: .75s;
+    animation-fill-mode: both;
+}
+
+.left-top-leaf-animation {
+    animation-name: LeafAnimation;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.stalk-animation {
+    animation-name: StalkAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
